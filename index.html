@@ -12,75 +12,73 @@
     <meta name="google-site-verification" content="xmEOL4UkxKVNujuichGOlM_e5ApTU0H9slLWAMoa_Z0">
     <link rel="canonical" href="https://upriver.github.io">
   </head>
-  <body class="mb-3">
-    <nav class="navbar navbar-full navbar-dark bg-inverse">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="/">Upriver</a>
-      </div>
+  <body class="mb-5">
+    <nav class="navbar navbar-inverse bg-inverse">
+      <a class="navbar-brand" href="/">Upriver</a>
     </nav>
 
-    <header class="pt-3 text-xs-center">
+    <header class="pt-5 text-center">
       <div class="container">
         <h1 class="display-3">keep up with upstream</h1>
         <p>effortlessly sync your GitHub repositories with upstream using only the GitHub API</p>
       </div>
     </header>
 
-    <main class="pt-3">
-      <div class="container text-xs-center" id="signin">
+    <main class="pt-5">
+      <div class="container text-center" id="signin">
         <a class="btn btn-lg btn-social btn-github" href="https://github.com/login/oauth/authorize?client_id=d39dea3b2637ce0c4fdb&scope=repo" role="button">
           <span class="fa fa-github"></span> Sign in with GitHub
         </a>
       </div>
 
-      <div class="container text-xs-center" id="controls" style="display: none;">
+      <div class="container text-center" id="controls" style="display: none;">
         <div class="col-md-6 offset-md-3">
           <form class="form">
             <div class="row">
-              <strong class="col-xs-4 p-b-1">Pull commits:</strong>
+              <strong class="col-4 pb-2">Pull commits:</strong>
             </div>
             <div class="form-group row">
-              <label class="col-xs-4 col-form-label" for="forkRepo">into</label>
-              <div class="col-xs-8">
+              <label class="col-4 col-form-label" for="forkRepo">into</label>
+              <div class="col-8">
                 <select class="form-control" id="forkRepo">
                 </select>
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-xs-4 col-form-label" for="forkBranch">branch</label>
-              <div class="col-xs-8">
+              <label class="col-4 col-form-label" for="forkBranch">branch</label>
+              <div class="col-8">
                 <select class="form-control" id="forkBranch">
                 </select>
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-xs-4 col-form-label" for="parentRepo">from</label>
-              <div class="col-xs-8">
+              <label class="col-4 col-form-label" for="parentRepo">from</label>
+              <div class="col-8">
                 <select class="form-control" id="parentRepo">
                 </select>
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-xs-4 col-form-label" for="parentBranch">branch</label>
-              <div class="col-xs-8">
+              <label class="col-4 col-form-label" for="parentBranch">branch</label>
+              <div class="col-8">
                 <select class="form-control" id="parentBranch">
                 </select>
               </div>
             </div>
             <div class="row">
-              <label class="col-xs-4 col-form-label" for="force">
+              <label class="col-4 col-form-label" for="force">
                 <span data-toggle="tooltip" data-placement="left" title="Use the force Luke! You will lose any commits in your fork that are not in upstream.">
                   force?
                 </span>
               </label>
-              <div class="col-xs-8">
-                <div class="checkbox float-xs-left">
+              <div class="col-8">
+                <div class="checkbox float-left">
                   <input type="checkbox" id="force">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-3 offset-xs-4">
+              <div class="col-3 offset-4">
                 <button type="button" class="btn btn-block btn-primary" id="pull">Pull</button>
               </div>
             </div>
@@ -92,10 +90,10 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Results</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title">Results</h4>
             </div>
             <div class="modal-body">
               <pre></pre>
@@ -110,11 +108,7 @@
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-muted">Built with love by <a href="https://bardiharborow.com">Bardi Harborow</a>.</div>
-          </div>
-        </div>
+        <div class="text-muted">Built with love by <a href="https://bardiharborow.com">Bardi Harborow</a>.</div>
       </div>
     </footer>
 

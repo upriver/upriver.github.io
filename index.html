@@ -25,10 +25,21 @@
     </header>
 
     <main class="pt-5">
-      <div class="container text-center" id="signin">
-        <a class="btn btn-lg btn-social btn-github" href="https://github.com/login/oauth/authorize?client_id=d39dea3b2637ce0c4fdb&scope=repo" role="button">
-          <span class="fa fa-github"></span> Sign in with GitHub
-        </a>
+      <div class="container" id="signin">
+        <div class="input-group justify-content-center">
+          <div class="input-group-btn">
+            <a role="button" class="btn btn-lg btn-social btn-github" href="https://github.com/login/oauth/authorize?client_id=d39dea3b2637ce0c4fdb&scope=repo">
+              <span class="fa fa-github"></span> Sign in with GitHub
+            </a>
+            <button type="button" class="btn btn-lg btn-github dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="https://github.com/login/oauth/authorize?client_id=d39dea3b2637ce0c4fdb&scope=repo">Private and public repos</a>
+              <a class="dropdown-item" href="https://github.com/login/oauth/authorize?client_id=d39dea3b2637ce0c4fdb&scope=public_repo">Public repos only</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container text-center" id="controls" style="display: none;">

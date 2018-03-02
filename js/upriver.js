@@ -47,6 +47,11 @@ Upriver.prototype.getRepos = function getRepos(callback) {
   $.getJSON('https://api.github.com/user', function(user) {
     $.getJSON(user.repos_url, callback);
   });
+  $.getJSON('https://api.github.com/user/orgs', function(orgs) {
+      for (var i = 0; i < orgs.length; i++) {
+          $.getJSON(orgs[i].repos_url, callback);
+      }
+  });
 };
 
 Upriver.prototype.addRepo = function addRepo(repo) {
